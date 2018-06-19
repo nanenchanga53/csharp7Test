@@ -16,7 +16,13 @@ namespace csharp7test
             OldRef();//배열의 특정 요소의 값을 바꾸러면 배열 인스턴스 자체를 넘겨주거나(이거) 원하는 배열 요소만을 바꿀 수 있는 매서드를 정의해야했다
             NewRef();//ref return을 사용하면 원하는 요소의 참조만 반환하는 것이 가능하다
             MethodRef(); //메서드 값에 값을 대입가능
+            NewTuple();
             
+        }
+
+        private static void NewTuple()
+        {
+            UseNewTuple tuple = new UseNewTuple();
         }
 
         private static void MethodRef()
