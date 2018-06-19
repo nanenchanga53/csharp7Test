@@ -92,7 +92,7 @@ namespace csharp7test
         public int Y { get; }
         public int Width { get; }
         public int Height { get; }
-
+        
         public DeconstructRectangle(int x, int y, int width, int height)
         {
             X = x;
@@ -106,6 +106,7 @@ namespace csharp7test
             x = X;
             y = Y;
         }
+        
 
     }
 }
