@@ -18,7 +18,13 @@ namespace csharp7test
             MethodRef(); //메서드 값에 값을 대입가능
             NewTuple(); //튜플의 새로운 정의 방법이 생겼다. Tuple<,>가 (,)로 편하게 바뀌었다.
             NewRanda(); //이전에는 매서드,속성get,인덱서get이 사용가능했다 하지만 생성자,소멸자,이벤트,속성과인덱서의 set까지 확장되었다.
+            NewLocalFuctions();
             
+        }
+
+        private static void NewLocalFuctions()
+        {
+            UseNewLocalFuntion funtions = new UseNewLocalFuntion();
         }
 
         private static void NewRanda()
