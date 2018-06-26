@@ -21,8 +21,13 @@ namespace csharp7test
             //NewLocalFuctions();//메서드 안에서만 호출 가능한 메서드를 정의할 수 있는 지역함수 문법을 추가했다.
             //NewAsync(); ////ValueTask<T> 타입은 async 메서드 내에 동기 처리와 비동기 처리가 혼합되어 있을 때 유용하다
             //NewThrow(); //throw가 의미 있게 사용될 만한 식에서 허용이된다.
-            newNumberLiteral(); //숫자 중간에 _를 넣어서 기독성을 높일 수 있다 아쉽게도 ,는 못쓴다.
+            //newNumberLiteral(); //숫자 중간에 _를 넣어서 기독성을 높일 수 있다 아쉽게도 ,는 못쓴다.
+            NewPetternMatching(); //
+        }
 
+        private static void NewPetternMatching()
+        {
+            UseNewPattern pattern = new UseNewPattern();
         }
 
         private static void newNumberLiteral()
