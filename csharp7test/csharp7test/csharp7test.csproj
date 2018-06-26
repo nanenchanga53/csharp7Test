@@ -54,6 +54,7 @@
     <Compile Include="UseNewAsync.cs" />
     <Compile Include="UseNewLocalFuntion.cs" />
     <Compile Include="UseNewRanda.cs" />
+    <Compile Include="UseNewThrow.cs" />
     <Compile Include="UseNewTuple.cs" />
   </ItemGroup>
   <ItemGroup>
