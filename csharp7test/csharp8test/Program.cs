@@ -1,6 +1,7 @@
 ﻿using System;
 using static System.Console;
 using static System.Convert;
+
 namespace csharp8test
 {
     class Program
@@ -27,6 +28,9 @@ namespace csharp8test
                 case 1:
                     WriteLine("1.디폴트 인터페이스 멤버 (Default Inteface Members)");
                     WriteLine("Selected");
+
+                    DefaultInterfaceMembers dim = new DefaultInterfaceMembers();
+                    
                     
                     break;
                 case 2:
