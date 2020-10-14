@@ -34,6 +34,39 @@ namespace csharp8test
         }
     }
 
+    class MyLogger : ILogger
+    {
+        public void Log(string message)
+        {
+            Console.WriteLine("기존 인터페이스 Log");
+            Console.WriteLine(message);
+        }
+
+        // 디폴트 구현을 사용하지 않고 새로 정의함
+        public void Log(Exception ex)
+        {
+            Console.WriteLine("새로운 인터페이스 Log");
+            Console.WriteLine(ex.ToString());
+            Console.WriteLine("-----------");
+
+            //////////////////////////
+            //한가지 주의할 점은 인터페이스의 디폴트 멤버 구현을 엑세스하기 위해서는 인터페이스로 캐스팅된 변수를 사용한다는 점이다
+            //예를 들어, 위 ILogger.Log(string logType, string msg) 메서드에서 정의된 디폴트 구현은 MyLogger 객체에서 직접 엑세스할 수 없고, ILogger로 캐스팅 된 후에 엑세스할 수 있다
+            //MyLogger myLogger = new MyLogger();
+            //myLogger.Log("Error", "Invaild Error"); //여기서에러
+
+            ILogger logger1 = new MyLogger();
+            logger1.Log("Error", "Invaild data");
+
+            Console.WriteLine("한가지 주의할 점은 인터페이스의 디폴트 멤버 구현을 엑세스하기 위해서는 인터페이스로 캐스팅된 변수를 사용한다는 점이다");
+            Console.WriteLine("예를 들어, 위 ILogger.Log(string logType, string msg) 메서드에서 정의된 디폴트 구현은 MyLogger 객체에서 직접 엑세스할 수 없고, ILogger로 캐스팅 된 후에 엑세스할 수 있다");
+
+            Console.WriteLine(@"
+            ILogger logger1 = new MyLogger();
+            logger1.Log(\'Error\', \'Invaild data\');");
+        }
+    }
+
     public class DefaultInterfaceMembers
     {
                 
@@ -79,36 +112,5 @@ namespace csharp8test
         }
     }
 
-    class MyLogger : ILogger
-    {
-        public void Log(string message)
-        {
-            Console.WriteLine("기존 인터페이스 Log");
-            Console.WriteLine(message);
-        }
-
-        // 디폴트 구현을 사용하지 않고 새로 정의함
-        public void Log(Exception ex)
-        {
-            Console.WriteLine("새로운 인터페이스 Log");
-            Console.WriteLine(ex.ToString());
-            Console.WriteLine("-----------");
-
-            //////////////////////////
-            //한가지 주의할 점은 인터페이스의 디폴트 멤버 구현을 엑세스하기 위해서는 인터페이스로 캐스팅된 변수를 사용한다는 점이다
-            //예를 들어, 위 ILogger.Log(string logType, string msg) 메서드에서 정의된 디폴트 구현은 MyLogger 객체에서 직접 엑세스할 수 없고, ILogger로 캐스팅 된 후에 엑세스할 수 있다
-            //MyLogger myLogger = new MyLogger();
-            //myLogger.Log("Error", "Invaild Error"); //여기서에러
-
-            ILogger logger1 = new MyLogger();
-            logger1.Log("Error", "Invaild data");
-
-            Console.WriteLine("한가지 주의할 점은 인터페이스의 디폴트 멤버 구현을 엑세스하기 위해서는 인터페이스로 캐스팅된 변수를 사용한다는 점이다");
-            Console.WriteLine("예를 들어, 위 ILogger.Log(string logType, string msg) 메서드에서 정의된 디폴트 구현은 MyLogger 객체에서 직접 엑세스할 수 없고, ILogger로 캐스팅 된 후에 엑세스할 수 있다");
-
-            Console.WriteLine(@"
-            ILogger logger1 = new MyLogger();
-            logger1.Log(\'Error\', \'Invaild data\');");
-        }
-    }
+    
 }

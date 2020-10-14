@@ -37,6 +37,8 @@ namespace csharp8test
                     WriteLine("2.향상된 패턴 매칭 기능 (Pattern Matching)");
                     WriteLine("Selected");
 
+                    PatternMatching ptm = new PatternMatching();
+
                     break;
                 case 3:
                     WriteLine("3.Nullable Reference Type");
