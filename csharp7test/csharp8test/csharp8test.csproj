@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable><!--값에 Null을 넣었을때 경고가 뜨게 하는 설정-->
   </PropertyGroup>
 
 </Project>
