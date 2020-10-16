@@ -49,6 +49,8 @@ namespace csharp8test
                                         WriteLine("4.인덱싱과 슬라이싱 (Indexing / Slicing)");
                                         WriteLine("Selected");
 
+                                        IndexingAndSlicing ias = new IndexingAndSlicing();
+
                                         break;
                                 case 5:
                                         WriteLine("5.비동기 스트림 (Async Stream)");
