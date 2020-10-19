@@ -426,7 +426,7 @@ namespace csharp8test
         }
     }
 
-    public interface Shape
+    interface Shape
     {
         public String MyShapeName { get; }
         

@@ -56,6 +56,8 @@ namespace csharp8test
                                         WriteLine("5.비동기 스트림 (Async Stream)");
                                         WriteLine("Selected");
 
+                                        AsyncStream ast = new AsyncStream();
+
                                         break;
                                 case 6:
                                         WriteLine("6.using 선언");
