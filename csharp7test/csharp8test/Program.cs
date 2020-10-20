@@ -69,6 +69,8 @@ namespace csharp8test
                                         WriteLine("7.널 병합 할당 연산자 (Null-coalescing assignment)");
                                         WriteLine("Selected");
 
+                                        NullCoalescingAssignment nca = new NullCoalescingAssignment();
+
                                         break;
                                 case 8:
                                         WriteLine("8.구조체(struct) 읽기 전용 멤버");
