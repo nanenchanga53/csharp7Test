@@ -63,6 +63,7 @@ namespace csharp8test
                                         WriteLine("6.using 선언");
                                         WriteLine("Selected");
 
+                                        NewUsing nu = new NewUsing();
                                         break;
                                 case 7:
                                         WriteLine("7.널 병합 할당 연산자 (Null-coalescing assignment)");

@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable><!--값에 Null을 넣었을때 경고가 뜨게 하는 설정-->
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="src.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
