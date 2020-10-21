@@ -76,6 +76,8 @@ namespace csharp8test
                                         WriteLine("8.구조체(struct) 읽기 전용 멤버");
                                         WriteLine("Selected");
 
+                                        StructReadOnly sro = new StructReadOnly();
+
                                         break;
                                 case 9:
                                         WriteLine("9.기타 기능들");
