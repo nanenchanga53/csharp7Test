@@ -20,6 +20,7 @@ namespace csharp8test
                         WriteLine("7.널 병합 할당 연산자 (Null-coalescing assignment)");
                         WriteLine("8.구조체(struct) 읽기 전용 멤버");
                         WriteLine("9.기타 기능들");
+                        WriteLine("10.Unmanaged constructed type");
 
                         int selectedNum = ToInt32(ReadLine());
 
@@ -83,6 +84,12 @@ namespace csharp8test
                                         WriteLine("9.기타 기능들");
                                         WriteLine("Selected");
 
+                                        OtherTools ot = new OtherTools();
+
+                                        break;
+                                case 10:
+                                        WriteLine("10.Unmanaged constructed type");
+                                        WriteLine("Selected");
                                         break;
 
                         }
