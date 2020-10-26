@@ -90,6 +90,7 @@ namespace csharp8test
                                 case 10:
                                         WriteLine("10.Unmanaged constructed type");
                                         WriteLine("Selected");
+                                        UnmanagedConstructedType uct = new UnmanagedConstructedType();
                                         break;
 
                         }
