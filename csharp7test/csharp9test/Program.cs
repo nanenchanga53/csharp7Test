@@ -37,6 +37,7 @@ namespace csharp9test
                                 case 2:
                                         WriteLine("2.init accessor");
                                         WriteLine("Selected");
+                                        InitOnlyType iot = new InitOnlyType();
 
 
                                         break;
