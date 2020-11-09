@@ -45,6 +45,28 @@ namespace csharp9test
                                         WriteLine("3.최상위 프로그램 (Top-level Program)");
                                         WriteLine("Selected");
 
+                                        WriteLine("이제 파이썬처럼 main에서 시작할 필요가 없다. 그런데 하나의 파일에서만 가능하다");
+                                        WriteLine("그러면 명령인자(프로그램 시작시 넣고 시작하는 값)는 어떻게 할까?");
+                                        WriteLine(@"
+// 프로그래명이 test.exe 일 때
+//   test.exe 100 200
+// 와 같이 호출한다고 가정
+int a = int.Parse(args[0]); // 100
+int b = int.Parse(args[1]); // 200
+
+// 로컬함수 사용
+int c = Calculate(a, b);
+System.Console.WriteLine(c);
+
+// 로컬함수 정의
+int Calculate(int x, int y)
+{
+    int k = x + y;
+    return k;
+}
+
+");
+
                                         break;
                                 case 4:
                                         WriteLine("4.향상된 패턴 매칭 (Pattern matching)");
