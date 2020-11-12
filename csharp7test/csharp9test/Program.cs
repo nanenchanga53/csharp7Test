@@ -72,6 +72,8 @@ int Calculate(int x, int y)
                                         WriteLine("4.향상된 패턴 매칭 (Pattern matching)");
                                         WriteLine("Selected");
 
+                                        PatternMattching pm = new PatternMattching();
+
                                         break;
                                 case 5:
                                         WriteLine("5.향상된 타겟 타이핑 (Target typing)");
