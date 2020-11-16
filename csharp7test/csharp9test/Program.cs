@@ -79,6 +79,8 @@ int Calculate(int x, int y)
                                         WriteLine("5.향상된 타겟 타이핑 (Target typing)");
                                         WriteLine("Selected");
 
+                                        TargetTypeing tt = new();
+
                                         break;
                                 case 6:
                                         WriteLine("6.공변 리턴 타입 (Covariant return type)");
