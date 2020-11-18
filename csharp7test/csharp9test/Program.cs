@@ -86,6 +86,7 @@ int Calculate(int x, int y)
                                         WriteLine("6.공변 리턴 타입 (Covariant return type)");
                                         WriteLine("Selected");
 
+                                        CovariantReturnType crt = new();
                                         break;
 
                         }
