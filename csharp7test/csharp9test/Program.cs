@@ -22,6 +22,7 @@ namespace csharp9test
                         WriteLine("4.향상된 패턴 매칭 (Pattern matching)");
                         WriteLine("5.향상된 타겟 타이핑 (Target typing)");
                         WriteLine("6.공변 리턴 타입 (Covariant return type)");
+                        WriteLine("7.Native Int 타입 (nint, nuint)");
 
                         int selectedNum = ToInt32(ReadLine());
 
@@ -87,6 +88,12 @@ int Calculate(int x, int y)
                                         WriteLine("Selected");
 
                                         CovariantReturnType crt = new();
+                                        break;
+                                case 7:
+                                        WriteLine("7.Native Int 타입 (nint, nuint)");
+                                        WriteLine("Selected");
+
+                                        NativeIntType nit = new();
                                         break;
 
                         }
